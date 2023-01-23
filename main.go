@@ -31,7 +31,7 @@ func main() {
 
 	requiredDetailsMap := map[string]string{}
 
-	json.Unmarshal([]byte(JsonRes), &requiredDetailsMap)
+	json.Unmarshal(JsonRes, &requiredDetailsMap)
 
 	fmt.Println("iban: " + requiredDetailsMap["iban"])
 	fmt.Println("bank_name: " + requiredDetailsMap["bank_name"])
